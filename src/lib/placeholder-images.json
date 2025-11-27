@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "travel-fund",
+      "description": "Illustration of a globe and a plane for a travel fund.",
+      "imageUrl": "https://images.unsplash.com/photo-1528543606781-2f6e6857f318?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmF2ZWwlMjBhZHZlbnR1cmV8ZW58MHx8fHwxNzY0MjUxMDU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "travel adventure"
+    },
+    {
+      "id": "startup-fund",
+      "description": "Illustration of a rocket launching for a startup fund.",
+      "imageUrl": "https://images.unsplash.com/photo-1551791501-9acf2e68ef1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c3RhcnR1cCUyMHJvY2tldHxlbnwwfHx8fDE3NjQyNTEwNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "startup rocket"
+    },
+    {
+      "id": "charity-fund",
+      "description": "Illustration of hands holding a heart for a charity fund.",
+      "imageUrl": "https://images.unsplash.com/photo-1644726270363-e746b37b482b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGFyaXR5JTIwZ2l2aW5nfGVufDB8fHx8MTc2NDE3Mzg0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "charity giving"
+    },
+    {
+      "id": "education-fund",
+      "description": "Illustration of books and a graduation cap for an education fund.",
+      "imageUrl": "https://images.unsplash.com/photo-1666198259234-f7033c78b94e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlZHVjYXRpb24lMjBib29rc3xlbnwwfHx8fDE3NjQyNTEwNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "education books"
+    },
+    {
+      "id": "community-project",
+      "description": "Illustration of people working together for a community project.",
+      "imageUrl": "https://images.unsplash.com/photo-1666305103177-79269fe480bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb21tdW5pdHklMjB0ZWFtfGVufDB8fHx8MTc2NDI1MTA1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community team"
+    },
+    {
+      "id": "art-fund",
+      "description": "Illustration of art supplies for an art fund.",
+      "imageUrl": "https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnQlMjBwYWludHxlbnwwfHx8fDE3NjQxNjE3Nzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "art paint"
+    }
+  ]
 }
