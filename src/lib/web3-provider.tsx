@@ -2,7 +2,7 @@
 import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 import {WagmiProvider, createConfig, http} from 'wagmi';
 import {mainnet, sepolia} from 'wagmi/chains';
-import {AppKitProvider, getDefaultConfig} from '@reown/appkit';
+import {AppKit, getDefaultConfig} from '@reown/appkit';
 
 const config = createConfig(
   getDefaultConfig({
@@ -23,14 +23,14 @@ export default function Web3Provider({children}: {children: React.ReactNode}) {
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
-        <AppKitProvider
+        <AppKit
           theme="dark"
           options={{
             overlayBlur: 'small',
           }}
         >
           {children}
-        </AppKitProvider>
+        </AppKit>
       </QueryClientProvider>
     </WagmiProvider>
   );
