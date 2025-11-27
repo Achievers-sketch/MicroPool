@@ -1,8 +1,7 @@
 'use client';
 
 import {SidebarTrigger} from '@/components/ui/sidebar';
-import {Button} from '@/components/ui/button';
-import {Wallet} from 'lucide-react';
+import { ConnectButton } from '@/components/web3/ConnectButton';
 
 export default function AppHeader() {
   return (
@@ -11,10 +10,7 @@ export default function AppHeader() {
         <SidebarTrigger />
       </div>
       <div className="flex w-full items-center justify-end gap-4">
-        <Button>
-          <Wallet className="mr-2 h-4 w-4" />
-          Connect Wallet
-        </Button>
+        <ConnectButton />
       </div>
     </header>
   );

@@ -4,6 +4,7 @@ import {SidebarProvider, Sidebar, SidebarInset} from '@/components/ui/sidebar';
 import AppSidebar from '@/components/layout/Sidebar';
 import AppHeader from '@/components/layout/Header';
 import {Toaster} from '@/components/ui/toaster';
+import Web3Provider from '@/lib/web3-provider';
 
 export const metadata: Metadata = {
   title: 'MicroPool dApp',
@@ -23,19 +24,21 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
-        <SidebarProvider>
-          <Sidebar>
-            <AppSidebar />
-          </Sidebar>
-          <SidebarInset>
-            <div className="flex h-full flex-col">
-              <AppHeader />
-              <main className="flex-1 overflow-y-auto p-4 md:p-6 lg:p-8">
-                {children}
-              </main>
-            </div>
-          </SidebarInset>
-        </SidebarProvider>
+        <Web3Provider>
+          <SidebarProvider>
+            <Sidebar>
+              <AppSidebar />
+            </Sidebar>
+            <SidebarInset>
+              <div className="flex h-full flex-col">
+                <AppHeader />
+                <main className="flex-1 overflow-y-auto p-4 md:p-6 lg:p-8">
+                  {children}
+                </main>
+              </div>
+            </SidebarInset>
+          </SidebarProvider>
+        </Web3Provider>
         <Toaster />
       </body>
     </html>
