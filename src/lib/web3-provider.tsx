@@ -14,6 +14,8 @@ const config = createConfig(
       [mainnet.id]: http(),
       [sepolia.id]: http(),
     },
+    // Exclude the problematic Gemini connector
+    excludedWalletIds: ['com.gemini'],
   })
 );
 
