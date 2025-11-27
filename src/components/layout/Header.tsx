@@ -9,7 +9,7 @@ export default function AppHeader() {
       <div className="md:hidden">
         <SidebarTrigger />
       </div>
-      <div className="flex w-full items-center justify-end gap-4">
+      <div className="flex flex-1 items-center justify-end gap-4">
         <ConnectButton />
       </div>
     </header>

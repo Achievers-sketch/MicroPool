@@ -8,7 +8,6 @@ import {
 } from '@/components/ui/card';
 import {Button} from '@/components/ui/button';
 import {Input} from '@/components/ui/input';
-import {Label} from '@/components/ui/label';
 import {Textarea} from '@/components/ui/textarea';
 import {
   Select,
@@ -17,7 +16,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import {useForm, Controller} from 'react-hook-form';
+import {useForm} from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import {
@@ -57,7 +56,7 @@ export default function CreatePoolPage() {
     }
 
   return (
-    <div className="mx-auto max-w-2xl">
+    <div className="mx-auto max-w-2xl px-2 sm:px-4 md:px-6">
       <Card>
         <CardHeader>
           <CardTitle>Create a New Pool</CardTitle>
