@@ -17,6 +17,7 @@ import {
   ShieldCheck,
   Github,
   CircleHelp,
+  FileCode,
 } from 'lucide-react';
 
 const links = [
@@ -35,6 +36,11 @@ const links = [
     label: 'Verify Contract',
     icon: ShieldCheck,
   },
+  {
+    href: '/contracts',
+    label: 'Develop & Deploy',
+    icon: FileCode,
+  },
 ];
 
 export default function AppSidebar() {
@@ -44,7 +50,21 @@ export default function AppSidebar() {
     <>
       <SidebarHeader>
         <div className="flex items-center gap-2 p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8 text-primary"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M12 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path><path d="M15.22 13.56a6 6 0 0 0-6.44 0"></path><path d="M16.5 16a9 9 0 0 0-9 0"></path></svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="h-8 w-8 text-primary"
+          >
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <path d="M12 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+            <path d="M15.22 13.56a6 6 0 0 0-6.44 0"></path>
+            <path d="M16.5 16a9 9 0 0 0-9 0"></path>
+          </svg>
           <h2 className="text-xl font-bold tracking-tight text-foreground">
             MicroPool
           </h2>
@@ -77,11 +97,16 @@ export default function AppSidebar() {
             </SidebarMenuButton>
           </SidebarMenuItem>
           <SidebarMenuItem>
-             <a href="https://github.com/FirebaseExtended/ai-apps" target="_blank" rel="noopener noreferrer" className='w-full'>
-                <SidebarMenuButton tooltip="GitHub">
-                    <Github />
-                    <span>Source Code</span>
-                </SidebarMenuButton>
+            <a
+              href="https://github.com/FirebaseExtended/ai-apps"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full"
+            >
+              <SidebarMenuButton tooltip="GitHub">
+                <Github />
+                <span>Source Code</span>
+              </SidebarMenuButton>
             </a>
           </SidebarMenuItem>
         </SidebarMenu>
@@ -89,3 +114,5 @@ export default function AppSidebar() {
     </>
   );
 }
+
+    
