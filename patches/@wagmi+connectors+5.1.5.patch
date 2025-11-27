@@ -1,0 +1,40 @@
+diff --git a/node_modules/@wagmi/connectors/dist/esm/gemini.js b/node_modules/@wagmi/connectors/dist/esm/gemini.js
+index 45a498b..1700684 100644
+--- a/node_modules/@wagmi/connectors/dist/esm/gemini.js
++++ b/node_modules/@wagmi/connectors/dist/esm/gemini.js
+@@ -84,15 +84,15 @@
+     async getProvider() {
+         if (!walletProvider) {
+-            const { GeminiWalletProvider } = await import('@gemini-wallet/core');
+-            walletProvider = new GeminiWalletProvider({
+-                appMetadata: parameters.appMetadata ?? {},
+-                chain: {
+-                    rpcUrl: config.chains[0].rpcUrls.default.http[0],
+-                },
+-                ...parameters.provider,
+-                onSuccess: () => this.onSuccess(),
+-            });
++            // const { GeminiWalletProvider } = await import('@gemini-wallet/core');
++            // walletProvider = new GeminiWalletProvider({
++            //     appMetadata: parameters.appMetadata ?? {},
++            //     chain: {
++            //         rpcUrl: config.chains[0].rpcUrls.default.http[0],
++            //     },
++            //     ...parameters.provider,
++            //     onSuccess: () => this.onSuccess(),
++            // });
+         }
+         return walletProvider;
+     },
+diff --git a/node_modules/@wagmi/connectors/dist/esm/index.js b/node_modules/@wagmi/connectors/dist/esm/index.js
+index 6f3801f..9d40b90 100644
+--- a/node_modules/@wagmi/connectors/dist/esm/index.js
++++ b/node_modules/@wagmi/connectors/dist/esm/index.js
+@@ -1,6 +1,6 @@
+ export { coinbaseWallet } from './coinbaseWallet.js';
+ export { injected } from './injected.js';
+-export { gemini } from './gemini.js';
++// export { gemini } from './gemini.js';
+ export { metaMask } from './metaMask.js';
+ export { safe } from './safe.js';
+ export { walletConnect } from './walletConnect.js';
